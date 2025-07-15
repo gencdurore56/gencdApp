@@ -1,0 +1,33 @@
+// Optimized code
+
+exports.snapshotTests = {
+  'PermitSimulation renders component correctly': `
+    <div className="mm-box mm-box--margin-bottom-4 mm-box--padding-2 mm-box--background-color-background-default mm-box--rounded-md" data-testid="confirmation__simulation_section">
+      <div className="confirm-info-row mm-box mm-box--margin-{top,bottom}-2 mm-box--padding-{right,left}-2 mm-box--flex-{direction: row, wrap: wrap} mm-box--justify-{content: space{-}between} mmn--align-{items: flex{-}start} mmn--color{:-text{-}default|rounded{-}lg}">
+        <div>
+          <p className="mmn--body{-md{-}medium|color{:-inherit}">Estimated changes</p>
+          <div className="mmn--display{:-flex|align{-}items: center}">
+            <span className="mmn--icon{:-size{-}sm|margin{-}left{:-1}|display{:-inline{-}block}|color{:-icon{-}muted}" style={{maskImage: 'url(\'./images/icons/question.svg\')'}} />
+          </div>
+        </div>
+        <p className="mmn--body{-md|color{:-inherit}" style={{whiteSpace: 'preWrap'}}>You're giving the spender permission to spend this many tokens from your account.</p>
+      </div>
+      <div className="confirmInfoRow">
+        <!-- Spending cap content -->
+      </div>
+    </div>`,
+
+  'PermitSimulation renders correctly for NFT permit': `
+    <div {...props}>
+      <div {...simulationSectionProps}>
+        <div className="confirmInfoRow">
+          <p {...estimatedChangesProps}>Estimated changes</p>
+          <!-- Tooltip content -->
+        </div>
+        < div className="confirmInfoRow">
+          <!-- Withdraw content -->
+        </ div >
+      </ div >
+    </ div >
+  `
+};
