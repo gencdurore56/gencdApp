@@ -1,0 +1,8 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import SwapSuccessIcon from './SwapSuccessIcon';
+
+test('SwapSuccessIcon renders the component', () => {
+  const { container } = render(<SwapSuccessIcon />);
+  expect(container.firstChild).toMatchSnapshot();
+});
